@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+text before <br>
+**********************************************************<br>
+<div ng-app="myApp" ng-controller="myCtrl">
+    <p ng-bind="firstname">  - 1 - </p>
+	<p> 2 - {{lastname}}</p>
+</div>
+**********************************************************<br>
+text after <br>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstname = "tamarindoOlimpico";
+    $scope.lastname = "tamarindoArgentino";
+});
+</script>
+
+<p>non nan non tamarindoNoText tamarindoYesText non nan non </p>
+
+
+
+</body>
+</html>
